@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Ultimate Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="chat-app">
+
+        <div class="sidebar">
+
+            <div class="profile-card">
+
+                <img
+                    src="https://i.imgur.com/6VBx3io.png"
+                    id="profilePic"
+                    class="profile-pic"
+                >
+
+                <div>
+                    <h2>ChatSphere</h2>
+                    <p>Realtime Messaging</p>
+                </div>
+
+            </div>
+
+            <label class="upload-btn">
+
+                Upload Profile
+
+                <input
+                    type="file"
+                    id="profileUpload"
+                    hidden
+                >
+
+            </label>
+
+            <div class="room-box">
+
+                <input
+                    type="text"
+                    id="roomInput"
+                    placeholder="Enter Room Code"
+                >
+
+                <button id="joinBtn">
+                    Join Room
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="chat-section">
+
+            <div class="topbar">
+
+                <h1>Realtime Chat</h1>
+
+                <div class="online-status">
+                    <span></span>
+                    Online
+                </div>
+
+            </div>
+
+            <div id="chatBox" class="chat-box">
+
+                <div class="system-message">
+                    Welcome To Ultimate Chat App
+                </div>
+
+            </div>
+
+            <div class="message-area">
+
+                <button
+                    id="emojiBtn"
+                    class="emoji-btn"
+                >
+                    😀
+                </button>
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type your message"
+                >
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    hidden
+                >
+
+                <button id="imageBtn">
+                    📷
+                </button>
+
+                <button id="sendBtn">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
