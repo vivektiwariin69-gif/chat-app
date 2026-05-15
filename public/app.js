@@ -1,4 +1,8 @@
-const socket = io("https://chat-app-3weg.onrender.com");
+const socket = io({
+
+    transports: ["websocket", "polling"]
+
+});
 const roomInput = document.getElementById("roomInput");
 const joinBtn = document.getElementById("joinBtn");
 
