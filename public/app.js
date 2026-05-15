@@ -1,5 +1,4 @@
-const socket = io();
-
+const socket = io("https://chat-app-3weg.onrender.com");
 const roomInput = document.getElementById("roomInput");
 const joinBtn = document.getElementById("joinBtn");
 
